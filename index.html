@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio page for Mihail Dunaev" />
+    <meta name="keywords" content="portfolio, webdev" />
+    <meta property="og:image" content="static/icos/md_icon.png" />
+
+    <title>Mihail Dunaev</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="static/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="static/css/bootstrap-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral+SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <link rel="icon" href="static/icos/md_icon.png" />
+  </head>
+
+  <body data-spy="scroll" data-target="#navmenu">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"> Mihail Dunaev </a>
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navmenu"
+            aria-expanded="false"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="navmenu">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#about-me-segment">About</a>
+            </li>
+            <li>
+              <a href="#projects-segment">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="about-me-segment" class="container">
+      <div id="clear-navbar"></div>
+      <div id="about-me-content" class="segment-content">
+        <div class="segment-row row">
+          <div id="about-me-img-col" class="col-md-6">
+            <div class="img-side">
+              <img id="about-me-img" src="static/imgs/about_me.png" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div id="about-me-title" class="segment-title">About me</div>
+            <div class="segment-text">
+              I am a Software Engineer with more than 6 years experience. I did
+              fullstack web development for more than 5 years, mostly working
+              with React.js, Node.js, Express.js, Next.js, GraphQL & PostgreSQL.
+              Before web development I did low level programming (Linux kernel
+              programming, caching devices etc) in C/C++ and a bit of machine
+              learning in Python and MATLAB. I can pick up new technologies
+              really fast and I'm always up for a good challenge! I enjoy open
+              source a lot, my github profile is linked at the bottom of this
+              page. Feel free to download my
+              <a href="static/docs/web_cv.pdf">CV</a> and look over my past
+              <a href="#projects-segment">projects</a>. You can also contact me
+              at mihail.dunaev91 [at] gmail.com for business inquiries or just
+              to say hi.<br /><br />
+
+              Outside work I am into fitness (bodybuilding, running, hiking,
+              martial arts etc). I even wrote an
+              <a href="https://fitnessbook.github.io/book.pdf"
+                >open source book on fitness</a
+              >. I have a curiosity for computational neuroscience, having
+              studied EEG headsets in university, and I also enjoy experimenting
+              with food (molecular gastronomy), travel & MotoGP!
+            </div>
+          </div>
+
+          <div style="clear: both"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects-segment" class="container">
+      <div id="projects-content" class="segment-content">
+        <div class="segment-row row">
+          <div class="col-md-6">
+            <div class="segment-title">Projects</div>
+            <div class="segment-text">
+              <div id="project-list">
+                <h3 class="project-title">Introduction to Fitness (2022)</h3>
+                <div class="project-list-inner">
+                  <div class="project-list-desc">
+                    <ul>
+                      <li>
+                        Open source book on fitness!
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/latex.svg"
+                            class="tech-icon latex-icon"
+                            title="LaTeX"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proj-urls">
+                    <ul>
+                      <li>
+                        <i>Links</i>
+                        <div class="tech-stack">
+                          <a
+                            title="View Book"
+                            href="https://fitnessbook.github.io/book.pdf"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/www_icon.svg"
+                              class="www-link"
+                            />
+                          </a>
+                          <a
+                            title="View Repository"
+                            href="https://github.com/mihaildu/fitness"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/github_icon.svg"
+                              class="github-link"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3 class="project-title">
+                  Resource Aggregator for React Admin (2019)
+                </h3>
+                <div class="project-list-inner">
+                  <div class="project-list-desc">
+                    <ul>
+                      <li>
+                        Resource aggregator for React Admin which allows you to
+                        edit multiple resources (from different tables) in the
+                        same view. Useful if you want to have an admin interface
+                        similar to Django Admin.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proj-urls">
+                    <ul>
+                      <li>
+                        <i>Links</i>
+                        <div class="tech-stack">
+                          <a
+                            title="View Repository"
+                            href="https://github.com/mihaildu/ra-resource-aggregator"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/github_icon.svg"
+                              class="github-link"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3 class="project-title">Marlin Hawk Website (2019)</h3>
+                <div class="project-list-inner">
+                  <div class="project-list-desc">
+                    <ul>
+                      <li>
+                        Static website for Marlin Hawk, which is an executive
+                        search company
+                      </li>
+                      <li>
+                        <i>Frontend</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/gatsby.png"
+                            id="gatsby-icon"
+                            class="tech-icon"
+                            title="Gatsby"
+                          />
+                          <img
+                            src="static/imgs/react-hexagon.png"
+                            id="react-icon"
+                            class="tech-icon"
+                            title="React"
+                          />
+                          <img
+                            src="static/imgs/netlifycms.png"
+                            class="tech-icon netlifycms-icon"
+                            title="Netlify CMS"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <i>Backend</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/nodejs_logo.png"
+                            class="tech-icon nodejs-icon"
+                            title="Node.js"
+                          />
+                          <img
+                            src="static/imgs/GraphQL.png"
+                            id="graphql-icon"
+                            class="tech-icon"
+                            title="GraphQL"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <i>Other Tools</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/netlify.png"
+                            class="tech-icon netlify-icon"
+                            title="Netlify"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proj-urls">
+                    <ul>
+                      <li>
+                        <i>Links</i>
+                        <div class="tech-stack">
+                          <a
+                            title="View Website"
+                            href="https://www.marlinhawk.com/"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/www_icon.svg"
+                              class="www-link"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3 class="project-title">Elife xPub (2018)</h3>
+                <div class="project-list-inner">
+                  <div class="project-list-desc">
+                    <ul>
+                      <li>
+                        A submission and peer review system for research papers
+                      </li>
+                      <li>
+                        <i>Frontend</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/react-hexagon.png"
+                            id="react-icon"
+                            class="tech-icon"
+                            title="React"
+                          />
+                          <img
+                            src="static/imgs/apollo.png"
+                            class="tech-icon apollo-icon"
+                            title="Apollo Client"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <i>Backend</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/nodejs_logo.png"
+                            class="tech-icon nodejs-icon"
+                            title="Node.js"
+                          />
+                          <img
+                            src="static/imgs/GraphQL.png"
+                            id="graphql-icon"
+                            class="tech-icon"
+                            title="GraphQL"
+                          />
+                          <img
+                            src="static/imgs/apollo.png"
+                            class="tech-icon apollo-icon"
+                            title="Apollo Server"
+                          />
+                          <img
+                            src="static/imgs/psql.png"
+                            class="tech-icon psql-icon"
+                            title="PostgreSQL"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <i>Other Tools</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/PubSweet.png"
+                            id="pubsweet-icon"
+                            class="tech-icon"
+                            title="PubSweet"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proj-urls">
+                    <ul>
+                      <li>
+                        <i>Links</i>
+                        <div class="tech-stack">
+                          <a
+                            title="View Repository"
+                            href="https://github.com/elifesciences/elife-xpub"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/github_icon.svg"
+                              class="github-link"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3 class="project-title">Petbook (2017)</h3>
+                <div class="project-list-inner">
+                  <div class="project-list-desc">
+                    <ul>
+                      <li>Social network in React (similar to facebook)</li>
+                      <li>
+                        <i>Frontend</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/react-hexagon.png"
+                            id="react-icon"
+                            class="tech-icon"
+                            title="React + Flux"
+                          />
+                          <img
+                            src="static/imgs/jquery_logo.png"
+                            class="tech-icon jquery-icon"
+                            title="jQuery"
+                          />
+                          <img
+                            src="static/imgs/boostrap_logo.svg"
+                            id="bootstrap-icon"
+                            class="tech-icon"
+                            title="Bootstrap"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <i>Backend</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/nodejs_logo.png"
+                            class="tech-icon nodejs-icon"
+                            title="Node.js"
+                          />
+                          <img
+                            src="static/imgs/express_logo.png"
+                            class="tech-icon express-icon"
+                            title="Express"
+                          />
+                          <img
+                            src="static/imgs/mongodb_logo.png"
+                            class="tech-icon mongodb-icon"
+                            title="MongoDB"
+                          />
+                          <img
+                            src="static/imgs/mongoose_logo.png"
+                            class="tech-icon mongoose-icon"
+                            title="Mongoose"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <i>Other Tools</i>
+                        <div class="tech-stack">
+                          <img
+                            src="static/imgs/socketio_logo.png"
+                            class="tech-icon socketio-icon"
+                            title="Socket.io"
+                          />
+                          <img
+                            src="static/imgs/webpack_logo.png"
+                            class="tech-icon webpack-icon"
+                            title="Webpack"
+                          />
+                          <img
+                            src="static/imgs/dropbox_logo.png"
+                            class="tech-icon dropbox-icon"
+                            title="Dropbox Apps"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proj-urls">
+                    <ul>
+                      <li>
+                        <i>Links</i>
+                        <div class="tech-stack">
+                          <a
+                            title="View Website"
+                            href="https://petbook.up.railway.app/"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/www_icon.svg"
+                              class="www-link"
+                            />
+                          </a>
+                          <a
+                            title="View Repository"
+                            href="https://github.com/mihaildu/petbook"
+                            target="_blank"
+                          >
+                            <img
+                              src="static/imgs/github_icon.svg"
+                              class="github-link"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>Other projects</h3>
+                <div class="project-list-inner">
+                  <div class="project-list-desc">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/sequelize-json-mock"
+                          style="color: #337ab7"
+                          >Sequelize json mock</a
+                        >
+                        (2021) - package that allows you use data from a json
+                        when running tests and mock db access for sequelize
+                        package
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/rloseit_stats"
+                          style="color: #337ab7"
+                          >Reddit LoseIt Stats</a
+                        >
+                        (2017) - Python scripts to do statistics on data from
+                        Reddit LoseIt Challenge
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/ai/blob/master/ml/tests/etc/nn_digits.png"
+                          style="color: #337ab7"
+                          >Neural Network</a
+                        >
+                        (2017) - to predict digits from images, both in
+                        <a
+                          href="https://github.com/mihaildu/ai/blob/master/ml/tests/matlab/neural_nets/test10_digits.m"
+                          style="color: #337ab7"
+                          >MATLAB</a
+                        >
+                        and
+                        <a
+                          href="https://github.com/mihaildu/ai/blob/master/ml/tests/python/scikit_learn/neural_nets/test10_digits.py"
+                          style="color: #337ab7"
+                          >Python</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/comp/tree/master/hexplode"
+                          style="color: #337ab7"
+                          >Hexplode</a
+                        >
+                        (2016) - Python bot to compete in the hexplode
+                        competition
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/uni/blob/master/lego_robot/final-tex.pdf"
+                          style="color: #337ab7"
+                          >Lego Robot Implementation</a
+                        >
+                        (2015)
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/uni/blob/master/expressio/Mihail_Dunaev_Bachelor_Thesis_Paper.pdf"
+                          style="color: #337ab7"
+                          >Expressio</a
+                        >
+                        (2014) - emotion detection from video camera
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/mihaildu/uni/tree/master/uart_driver"
+                          style="color: #337ab7"
+                          >UART 16550</a
+                        >
+                        (2014) - device driver for Linux operating system
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="projects-img-col" class="col-md-6">
+            <div class="img-side">
+              <object
+                id="gears-img"
+                data="static/imgs/gears.svg"
+                type="image/svg+xml"
+              >
+                <img id="gears-img" src="static/imgs/gears.png" />
+              </object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom-bar">
+      <a title="Github Page" href="https://github.com/mihaildu" target="_blank">
+        <img src="static/imgs/github_icon.svg" class="github-link" />
+      </a>
+      <a
+        title="LinkedIn Page"
+        href="https://www.linkedin.com/in/mihail-dunaev-02b253115/"
+        target="_blank"
+      >
+        <img src="static/imgs/linkedin_logo.svg" class="linkedin-link" />
+      </a>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

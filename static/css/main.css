@@ -1,0 +1,336 @@
+/* make navbar a little bigger and center items */
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #3d9970;
+}
+
+/* remove gradient on navbar background */
+.navbar-default {
+  background-image: none;
+}
+
+/* use spectral font on navbar */
+.navbar-brand,
+.nav li {
+  font-family: "Spectral SC", serif;
+}
+
+/* bigger font size for name */
+.navbar-brand {
+  font-size: 22px;
+}
+
+/* change background for navbar tabs */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  border-radius: 10px;
+  background-image: none;
+}
+
+#about-me-segment,
+#projects-segment,
+#contact-segment {
+  background-color: #f8f8f8;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#about-me-segment {
+  min-height: 500px;
+}
+
+#clear-navbar {
+  margin-top: 70px;
+}
+
+.segment-content {
+  border-top: 4px double #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#about-me-content {
+  min-height: 430px;
+}
+
+#about-me-img-col {
+  margin-top: 19px;
+}
+
+#gears-img {
+  margin-top: 243px;
+}
+
+#contact-img {
+  margin-top: 127px;
+}
+
+@media (max-width: 1199px) {
+  #about-me-img-col {
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 991px) {
+  #about-me-img-col {
+    margin-top: 0px;
+  }
+  #gears-img {
+    margin-top: 50px;
+  }
+  #contact-img {
+    margin-top: 10px;
+  }
+}
+
+.segment-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-side {
+  text-align: center;
+  width: 100%;
+}
+
+#about-me-img {
+  width: 250px;
+}
+
+@media (max-width: 991px) {
+  #about-me-title {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #about-me-img {
+    margin-top: 10px;
+  }
+  .segment-text {
+    margin-bottom: 10px;
+  }
+}
+
+.segment-title {
+  font-size: 22px;
+  font-family: "Spectral SC", serif;
+  border-bottom: 4px double black;
+  margin-bottom: 10px;
+}
+
+.segment-text,
+.segment-text .ui-widget {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+}
+
+#project-list h3 {
+  font-size: 18px;
+}
+
+#projects-segment {
+  min-height: 500px;
+}
+
+#projects-content {
+  min-height: 500px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#project-list li {
+  margin-bottom: 20px;
+  padding-left: 16px;
+}
+
+#project-list li:before {
+  content: "»";
+  padding-right: 8px;
+}
+
+#project-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid #3d9970;
+  background: #3d9970;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.project-list-desc {
+  padding-right: 5px;
+}
+
+.proj-urls {
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+}
+
+.tech-stack {
+  padding-left: 16px;
+  margin-top: 20px;
+}
+
+.tech-icon {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.jquery-icon {
+  max-width: 70px;
+}
+
+.nodejs-icon {
+  max-width: 70px;
+}
+
+.express-icon {
+  max-width: 70px;
+}
+
+.mongodb-icon {
+  max-width: 70px;
+}
+
+.mongoose-icon {
+  max-width: 70px;
+}
+
+.socketio-icon {
+  max-width: 70px;
+}
+
+.webpack-icon {
+  max-width: 80px;
+}
+
+.php-icon {
+  max-width: 70px;
+}
+
+.mysql-icon {
+  max-width: 70px;
+}
+
+.latex-icon {
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.netlify-icon {
+  max-height: 90px;
+  max-width: 90px;
+}
+
+.netlifycms-icon {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.apollo-icon {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.psql-icon {
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.github-link,
+.www-link,
+.linkedin-link {
+  margin-right: 20px;
+  max-width: 50px;
+}
+
+#gears-img {
+  width: 220px;
+}
+
+#contact-segment {
+  min-height: 500px;
+  border-bottom: 4px double #ccc;
+}
+
+#contact-col {
+  margin-top: 10px;
+}
+
+#contact-content {
+  min-height: 500px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#send-message-btn {
+  border: 1px solid #3d9970;
+  background-color: #3d9970;
+  background-image: none;
+  margin-bottom: 10px;
+}
+
+#send-message-btn:hover {
+  background-color: #307a59;
+}
+
+#contact-img {
+  width: 300px;
+}
+
+#bottom-bar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f8f8f8;
+  border-top: 1px solid rgb(231, 231, 231);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 5px rgba(0, 0, 0, 0.075);
+  color: #333;
+}
+
+#flash-messages {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.g-recaptcha {
+  margin-bottom: 10px;
+}
+
+.rc-anchor-logo-img {
+  background: none;
+}
